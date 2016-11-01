@@ -1,10 +1,8 @@
-### **算法第四版**
+## **算法第四版**
 
-- 在IDEA下的源代码
+在IDEA下的源代码, 数据文件因为太大而没有上传, 在 [官方网站](http://introcs.cs.princeton.edu/java/data/)上下载数据文件解压到数据文件夹`algs4data`中
 
-数据文件因为太大而没有上传, 在 [官方网站](http://introcs.cs.princeton.edu/java/data/)上下载数据文件解压到数据文件夹`algs4data`中
-
-#### **代码改进**
+### **代码改进**
 
 **解决文件重定向问题**
 
@@ -14,7 +12,7 @@
 try {
         FileInputStream input = new FileInputStream("./algs4data/tinyT.txt");
         System.setIn(input);
-    } catch (FileNotFoundException e) {
+} catch (FileNotFoundException e) {
         e.printStackTrace();
-    }
+}
 ```
